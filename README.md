@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Math Madness 🎮
+
+An engaging, interactive math game built with Next.js 15, featuring challenges in algebra, geometry, and calculus basics.
+
+## Features
+
+✨ **Interactive Math Challenges**
+- Algebra, Geometry, and Calculus problems
+- Multiple difficulty levels
+- Instant feedback on answers
+- Helpful hints for each problem
+
+📊 **Built-in Graphing Calculator**
+- Visualize equations in real-time
+- Support for mathematical expressions
+- Interactive graph exploration
+
+🎯 **Gamification**
+- Points system (based on difficulty)
+- Streak tracking (consecutive correct answers)
+- Level progression
+- Achievement system
+- Progress tracking
+
+💬 **Feedback System**
+- Feedback button on every screen
+- Collect user suggestions for improvements
+- Help us make Math Madness even better!
+
+🎨 **Beautiful UI**
+- Tailwind CSS styling
+- Smooth animations
+- Responsive design
+- Dark-mode friendly color scheme
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, TypeScript, Tailwind CSS
+- **State Management**: Zustand
+- **Charting**: Recharts
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ and npm
+
+### Installation
 
 ```bash
+# Clone or navigate to the project
+cd math-madness
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+math-madness/
+├── app/
+│   ├── components/          # Reusable React components
+│   │   ├── FeedbackModal.tsx
+│   │   ├── GraphingCalculator.tsx
+│   │   ├── Header.tsx
+│   │   └── ChallengeCard.tsx
+│   ├── lib/
+│   │   ├── challenges.ts    # Challenge data
+│   │   └── gameStore.ts     # Zustand game state
+│   ├── types/
+│   │   └── index.ts         # TypeScript interfaces
+│   ├── challenge/
+│   │   └── [id]/            # Dynamic challenge pages
+│   ├── page.tsx             # Home page
+│   ├── layout.tsx           # Root layout
+│   └── globals.css          # Global styles
+├── package.json
+└── tsconfig.json
+```
 
-## Learn More
+## How It Works
 
-To learn more about Next.js, take a look at the following resources:
+1. **Home Screen**: Browse all available challenges by category or difficulty
+2. **Challenge Screen**: Read the problem, enter your answer, and get instant feedback
+3. **Graphing Calculator**: Visualize equations to help solve problems
+4. **Feedback**: Share suggestions to help us improve!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] More challenges (expanding database)
+- [ ] Leaderboard (track top performers)
+- [ ] Multiplayer mode
+- [ ] More advanced calculus topics
+- [ ] Mobile app version
+- [ ] Timed challenges
+- [ ] Challenge custom equations
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push to GitHub repository
+2. Connect to Vercel
+3. Deploy with one click!
+
+```bash
+# Or deploy from CLI
+npm i -g vercel
+vercel
+```
+
+## Contributing
+
+We love feedback! Use the feedback button in the app to share:
+- Bug reports
+- Feature requests
+- Difficulty suggestions
+- UX improvements
+
+## License
+
+MIT
+
+## Built with ❤️
+
+Math Madness is designed to make learning math fun and engaging!
+
+---
+
+**Start your math adventure today! 🚀**
